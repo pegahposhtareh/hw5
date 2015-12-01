@@ -59,7 +59,7 @@ int main(){
     // Analitical Euler
     yal[0]=cos(t);
     yal[1]=-sin(t);
-    eulaer_anal 	<< t << "\t" << yal[0] << "\t" << yal[1] << endl;
+    euler_anal 	<< t << "\t" << yal[0] << "\t" << yal[1] << endl;
 
   }
   // Closing the result files
