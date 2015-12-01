@@ -24,7 +24,7 @@ int main(){
   // Openning files to write the results
   ofstream euler_fwd("euler_fwd.dat");
   ofstream euler_bwd("euler_rwd.dat");
-  ofstream eulaer_anal("eulaer_anal.dat");
+  ofstream euler_anal("eulaer_anal.dat");
 
   // Define the starting valus
   ybwd[0] = 1; // x(0)
@@ -37,7 +37,7 @@ int main(){
   //Writing the starting valus in the corresponding files
   euler_fwd 	  << t << "\t" << yfwd[0] << "\t" << yfwd[1] << endl;
   euler_bwd 	  << t << "\t" << ybwd[0] << "\t" << ybwd[1] << endl;
-  eulaer_anal 	<< t << "\t" << yal[0]  << "\t" << yal[1]  << endl;
+  euler_anal 	<< t << "\t" << yal[0]  << "\t" << yal[1]  << endl;
 
   // Solving the equation via a for loop
   for (int i = 0; i < Nit; i++) {
@@ -66,6 +66,6 @@ int main(){
   euler_fwd.close();
   euler_bwd.close();
   euler_anal.close();
-  
+
   return 0;
 }
